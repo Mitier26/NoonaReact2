@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '../components/Box';
+import HomeButton from '../components/HomeButton';
 import { useState } from 'react';
 
 const choice = {
@@ -64,6 +65,7 @@ const ScissoersRockPaperPage = () => {
 
     return (
         <div className="container">
+            <HomeButton></HomeButton>
             <div className="main">
                 <div className="score">
                     <span>Player</span> <span>{userWins}</span> : <span>{computerWins}</span> <span>Computer</span>
