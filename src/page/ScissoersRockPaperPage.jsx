@@ -2,6 +2,9 @@ import React from 'react';
 import Box from '../components/Box';
 import HomeButton from '../components/HomeButton';
 import { useState } from 'react';
+import BattleBGM from '../assets/PerituneMaterial_Dramatic4.mp3';
+import BGMPlayer from '../components/BGMPlayer';
+import Jjajjan from '../assets/jjajang.mp3';
 
 const choice = {
     rock: {
@@ -65,6 +68,8 @@ const ScissoersRockPaperPage = () => {
 
     return (
         <div className="container">
+            <BGMPlayer bgmSrc={Jjajjan} />;
+            <BGMPlayer bgmSrc={BattleBGM} />
             <HomeButton></HomeButton>
             <div className="main">
                 <div className="score">
