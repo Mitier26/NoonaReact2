@@ -1,22 +1,55 @@
-import { useRef, useEffect } from 'react';
+// import { useRef, useEffect } from 'react';
 
-const BGMPlayer = ({ bgmSrc }) => {
-    const bgm = useRef(null);
+// const BGMPlayer = ({ bgmSrc }) => {
+//     const bgm = useRef(null);
 
-    useEffect(() => {
-        if (!bgm.current) {
-            bgm.current = new Audio(bgmSrc);
-            bgm.current.volume = 0.3;
-            bgm.current.play();
+//     useEffect(() => {
+//         if (!bgm.current) {
+//             bgm.current = new Audio(bgmSrc);
+//             bgm.current.volume = 0.3;
+//             bgm.current.play();
+//         }
+
+//         return () => {
+//             bgm.current.pause();
+//             bgm.current = null;
+//         };
+//     }, [bgmSrc]);
+
+//     return null;
+// };
+
+// export default BGMPlayer;
+
+// BGMManager.js
+class BGMManager {
+    constructor() {
+        if (BGMManager.instance) {
+            return BGMManager.instance;
         }
+        BGMManager.instance = this;
+        this.bgm = new Audio();
+        this.bgmSrc = '';
+        this.volume = 0.3;
+        return this;
+    }
 
-        return () => {
-            bgm.current.pause();
-            bgm.current = null;
-        };
-    }, [bgmSrc]);
+    playBGM(src) {
+        if (this.bgmSrc === src) {
+            this.bgm.play();
+            return;
+        }
+        this.bgm.pause();
+        this.bgmSrc = src;
+        this.bgm.src = src;
+        this.bgm.volume = this.volume;
+        this.bgm.loop = false;
+        this.bgm.play();
+    }
 
-    return null;
-};
+    pauseBGM() {
+        this.bgm.pause();
+    }
+}
 
-export default BGMPlayer;
+export default new BGMManager();

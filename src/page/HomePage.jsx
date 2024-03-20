@@ -19,6 +19,8 @@ const HomePage = () => {
         // bgm.current = new Audio(BattleBGM);
         // bgm.current.volume = 0.3;
         // bgm.current.play();
+
+        BGMPlayer.playBGM(BattleBGM);
         navigate('/scissorsrockpaper');
     };
 
