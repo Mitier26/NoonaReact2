@@ -2,7 +2,6 @@ import React from 'react';
 import Box from '../components/Box';
 import HomeButton from '../components/HomeButton';
 import { useState } from 'react';
-import BattleBGM from '../assets/PerituneMaterial_Dramatic4.mp3';
 import BGMPlayer from '../components/BGMPlayer';
 import Jjajjan from '../assets/jjajang.mp3';
 
