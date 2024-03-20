@@ -1,13 +1,13 @@
 import './App.css';
 import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import ScissoersRockPaperPage from './page/ScissoersRockPaperPage';
-import HomePage from './page/Homepage';
+import Homepage from './page/Homepage';
 
 function App() {
     return (
         <div>
             <Routes>
-                <Route path="/" element={<HomePage />} />
+                <Route path="/" element={<Homepage />} />
                 <Route path="/scissorsrockpaper" element={<ScissoersRockPaperPage />} />
             </Routes>
         </div>
