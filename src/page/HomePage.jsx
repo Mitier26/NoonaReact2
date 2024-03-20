@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import HomeSFX from '../assets/coalnoo.mp3';
 import BGMPlayer from '../components/BGMPlayer';
 
-const HomePage = () => {
+const Homepage = () => {
     // const bgm = useRef(new Audio(BattleBGM));
 
     // function playBGM() {
@@ -26,4 +26,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default Homepage;
