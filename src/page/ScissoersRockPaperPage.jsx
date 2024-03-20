@@ -68,8 +68,8 @@ const ScissoersRockPaperPage = () => {
 
     return (
         <div className="container">
-            <BGMPlayer bgmSrc={Jjajjan} />;
-            <BGMPlayer bgmSrc={BattleBGM} />
+            {/* <BGMPlayer bgmSrc={Jjajjan} />
+            <BGMPlayer bgmSrc={BattleBGM} /> */}
             <HomeButton></HomeButton>
             <div className="main">
                 <div className="score">

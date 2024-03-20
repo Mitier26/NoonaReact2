@@ -13,7 +13,7 @@ const HomePage = () => {
 
     return (
         <div className="home">
-            <BGMPlayer bgmSrc={HomeSFX} />
+            {/* <BGMPlayer bgmSrc={HomeSFX} /> */}
             <h1 className="title">누나와 리액트</h1>
             <div className="card-holder">
                 <Link className="card" to="/scissorsrockpaper">

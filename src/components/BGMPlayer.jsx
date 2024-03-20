@@ -5,7 +5,6 @@ const BGMPlayer = ({ bgmSrc }) => {
 
     useEffect(() => {
         if (!bgm.current) {
-            // bgm.current이 null인 경우에만 실행
             bgm.current = new Audio(bgmSrc); // 새로운 Audio 객체 생성
             bgm.current.volume = 0.3;
             bgm.current.play();
