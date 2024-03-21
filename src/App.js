@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route, Navigate, Link } from 'react-router-dom';
-import ScissoersRockPaperPage from './page/ScissoersRockPaperPage';
-import HomePage from './page/HomePage';
-import ScissorsRPClass from './page/ScissorsRPClass';
+import ScissoersRockPaperPage from './projects/project01/page/ScissoersRockPaperPage';
+import HomePage from './projects/project01//page/HomePage';
+import ScissorsRPClass from './projects/project01//page/ScissorsRPClass';
 
 function App() {
     return (

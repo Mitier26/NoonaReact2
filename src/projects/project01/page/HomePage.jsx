@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import HomeSFX from '../assets/coalnoo.mp3';
+import HomeSFX from '../assets/sounds/coalnoo.mp3';
 import BGMPlayer from '../components/BGMPlayer';
-import BattleBGM from '../assets/PerituneMaterial_Dramatic4.mp3';
+import BattleBGM from '../assets/sounds/PerituneMaterial_Dramatic4.mp3';
 
 const HomePage = () => {
     // const bgm = useRef(null);
