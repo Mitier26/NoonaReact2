@@ -1,6 +1,5 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useRef } from 'react';
 import HomeSFX from '../assets/coalnoo.mp3';
 import BGMPlayer from '../components/BGMPlayer';
 import BattleBGM from '../assets/PerituneMaterial_Dramatic4.mp3';

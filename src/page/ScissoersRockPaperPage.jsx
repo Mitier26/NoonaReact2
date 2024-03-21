@@ -2,8 +2,6 @@ import React from 'react';
 import Box from '../components/Box';
 import HomeButton from '../components/HomeButton';
 import { useState } from 'react';
-import BGMPlayer from '../components/BGMPlayer';
-import Jjajjan from '../assets/jjajang.mp3';
 
 const choice = {
     rock: {
