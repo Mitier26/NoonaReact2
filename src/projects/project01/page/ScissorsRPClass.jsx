@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import HomeButton from '../components/HomeButton';
+import HomeButton from '../../../HomeButton.jsx';
 import Box from '../components/Box';
 import BoxClass from '../components/BoxClass';
 

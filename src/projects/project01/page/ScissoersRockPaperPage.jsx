@@ -1,6 +1,6 @@
 import React from 'react';
 import Box from '../components/Box';
-import HomeButton from '../components/HomeButton';
+import HomeButton from '../../../HomeButton.jsx';
 import { useState } from 'react';
 
 const choice = {

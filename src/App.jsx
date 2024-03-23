@@ -1,4 +1,5 @@
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, Navigate, Link } from 'react-router-dom';
 import ScissoersRockPaperPage from './projects/project01/page/ScissoersRockPaperPage';
 import HomePage from './HomePage';
