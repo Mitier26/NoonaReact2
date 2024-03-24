@@ -1,19 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Honk&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .weather-container {
-    background: url('../assets/3447733.jpg');
+    /* background: url('../assets/3447733.jpg'); */
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    height: calc(100vh - 17px);
+    width: 100vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
+.weather-container video {
+    position: absolute;
+    height: calc(100vh - 17px);
+    width: 100vw;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
+    z-index: -1;
+}
+
+.search-city {
+    width: 50%;
+    height: 50px;
+    background-color: rgb(135, 135, 135);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50px;
+}
+
+.search-city input {
+    height: 40px;
+    width: 90%;
+    background-color: rgb(135, 135, 135);
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+.search-city:hover {
+    border: 5px solid greenyellow;
+}
+
+.search-city input::placeholder {
+    color: #fff;
+}
+
+#search-btn {
+    background-color: rgb(135, 135, 135);
+    font-size: 32px;
+}
+
+#search-btn:hover {
+    cursor: pointer;
+}
+
 .weather-box {
     border: 5px solid gray;
     padding: 50px;
     border-radius: 30px;
-    background-color: wheat;
+    background-color: rgba(168, 168, 168, 0.087);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    -webkit-backdrop-filter: blur(10px) saturate(1.8);
+    backdrop-filter: blur(3px) saturate(2);
+    color: #fff;
+}
+
+.weather-box h1 {
+    border-bottom: 3px double rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-family: 'Honk';
+    font-weight: 600;
+    /* color: #fff; */
 }
 
 .weather-btn-group {
@@ -23,5 +97,12 @@
     border: 1px solid black;
     border-radius: 30px;
     padding: 20px;
-    background-color: rgb(144, 144, 144);
+    background-color: rgba(72, 72, 72, 0.627);
+    -webkit-backdrop-filter: blur(10px) saturate(1.8);
+    backdrop-filter: blur(3px) saturate(2);
+}
+
+.weather-btn-group Button {
+    font-size: 3vw;
+    font-weight: 600;
 }
