@@ -21,7 +21,7 @@ import RainVideo from '../assets/video/rain.mp4';
 import SnowVideo from '../assets/video/snow.mp4';
 
 const WeatherPage = () => {
-    const API_KEY = 'c16f4a6bc823370200be39822e83011e';
+    const API_KEY = process.env.REACT_APP_WEATHER_API_KEY;
 
     const [weather, setWeather] = useState(null);
     const [city, setCity] = useState('');
