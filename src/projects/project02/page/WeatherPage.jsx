@@ -13,6 +13,7 @@ import rain_icon from '../assets/rain.png';
 import snow_icon from '../assets/snow.png';
 import wind_icon from '../assets/wind.png';
 import humidity_icon from '../assets/humidity.png';
+import mist_icon from '../assets/mist.png';
 
 import SunVideo from '../assets/video/sun.mp4';
 import CloudVideo from '../assets/video/cloud.mp4';
@@ -98,7 +99,7 @@ const WeatherPage = () => {
             weatherIcon = snow_icon;
             setVideoBg(SnowVideo);
         } else if (icon.startsWith('50')) {
-            weatherIcon = humidity_icon;
+            weatherIcon = mist_icon;
             setVideoBg(MistVideo);
         }
 
