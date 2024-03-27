@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+.login-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-list li {
+    padding: 10px;
+}
+
+.input-area {
+    position: absolute;
+    right: 20px;
+    float: right;
+    border-bottom: 3px solid black;
+}
+
+.input-area input {
+    border: none;
+}
+
+.card {
+    transition: 0.1s;
+    margin: 10px;
+}
+.card:hover {
+    scale: 1.1;
+    z-index: 1;
+}
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

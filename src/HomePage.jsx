@@ -41,6 +41,12 @@ const HomePage = () => {
                         <img src={weatherImg} alt="Weather"></img>
                         {/* <span className="card-back"></span> */}
                     </button>
+
+                    <button className="home-card" onClick={() => gotoPage('brand')}>
+                        <h4>H & M</h4>
+                        <img src={weatherImg} alt="Weather"></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
                 </div>
             </div>
         </div>
