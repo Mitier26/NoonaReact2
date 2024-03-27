@@ -12,6 +12,13 @@ const Navbar = () => {
         navigate('/brand/login');
     };
 
+    const search = (event) => {
+        if (event.key === 'Enter') {
+            let keyword = event.target.value;
+            navigate(`/brand/?q=${keyword}`);
+        }
+    };
+
     return (
         <div className="nav-bar">
             <div>
@@ -25,13 +32,13 @@ const Navbar = () => {
             </div>
             <div className="menu-area">
                 <ul className="menu-list">
-                    {menuList.map((menu) => (
-                        <li>{menu}</li>
+                    {menuList.map((menu, index) => (
+                        <li key={index}>{menu}</li>
                     ))}
                 </ul>
                 <div className="input-area">
                     <FontAwesomeIcon icon={faSearch} />
-                    <input type="text" placeholder="제품검색..." />
+                    <input type="text" placeholder="제품검색..." onKeyUp={(event) => search(event)} />
                 </div>
             </div>
         </div>

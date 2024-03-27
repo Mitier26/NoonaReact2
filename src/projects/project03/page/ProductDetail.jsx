@@ -7,9 +7,10 @@ const ProductDetail = () => {
     const [product, setProduct] = useState(null);
 
     const getProductDetail = async () => {
-        let url = `http://localhost:5000/products/${id}`;
+        let url = `https://my-json-server.typicode.com/Mitier26/NoonaReact/products/${id}`;
         let response = await fetch(url);
         let data = await response.json();
+        console.log(data.size);
         setProduct(data);
     };
 
@@ -32,13 +33,15 @@ const ProductDetail = () => {
                             사이즈 선택
                         </Dropdown.Toggle>
 
-                        <Dropdown.Menu>
-                            {product.size.map((item, index) => (
-                                <Dropdown.Item key={index} href={`#/action-${index}`}>
-                                    {item}
-                                </Dropdown.Item>
-                            ))}
-                        </Dropdown.Menu>
+                        {product?.size.length > 0 ? (
+                            <Dropdown.Menu>
+                                {product.size?.map((item, index) => (
+                                    <Dropdown.Item key={index} href={`#/action-${index}`}>
+                                        {item}
+                                    </Dropdown.Item>
+                                ))}
+                            </Dropdown.Menu>
+                        ) : null}
                     </Dropdown>
                     <Button className="" variant="dark">
                         추가

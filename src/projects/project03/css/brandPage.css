@@ -39,6 +39,7 @@
 
 .input-area input {
     border: none;
+    outline: none;
 }
 
 .card {

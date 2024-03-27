@@ -3,11 +3,14 @@ import Navbar from '../components/Navbar';
 import '../css/brandPage.css';
 import ProductCard from '../components/ProductCard';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useSearchParams } from 'react-router-dom';
 
 const ProductAll = () => {
     const [productList, setProductList] = useState([]);
+    const [query, setQuery] = useSearchParams();
     async function getProducts() {
-        let url = `http://localhost:5000/products`;
+        let searchQuery = query.get('q') || '';
+        let url = `https://my-json-server.typicode.com/Mitier26/NoonaReact/products?q=${searchQuery}`;
         let response = await fetch(url);
         let data = await response.json();
         setProductList(data);
@@ -15,15 +18,15 @@ const ProductAll = () => {
 
     useEffect(() => {
         getProducts();
-    }, []);
+    }, [query]);
 
     return (
         <div>
             <Navbar />
             <Container>
                 <Row>
-                    {productList.map((item) => (
-                        <Col lg={3}>
+                    {productList.map((item, index) => (
+                        <Col key={index} lg={3}>
                             <ProductCard item={item} />
                         </Col>
                     ))}
