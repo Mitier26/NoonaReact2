@@ -61,3 +61,7 @@
     flex-direction: column;
     gap: 20px;
 }
+
+.logo-btn {
+    cursor: pointer;
+}

@@ -22,7 +22,10 @@ function App() {
                 <Route path="*" element={<Navigate to="/" />} />
                 <Route path="/weather" element={<WeatherPage />} />
                 {/* <Route path="/brand" element={<BrandPage />} /> */}
-                <Route path="/brand" element={<ProductAll />} />
+                <Route
+                    path="/brand"
+                    element={<ProductAll authenticate={authenticate} setAuthenticate={setAuthenticate} />}
+                />
                 <Route path="/brand/login/" element={<Login setAuthenticate={setAuthenticate} />} />
                 <Route path="/brand/product/:id/" element={<PrivateRoute authenticate={authenticate} />} />
             </Routes>

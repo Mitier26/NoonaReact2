@@ -5,7 +5,7 @@ import ProductCard from '../components/ProductCard';
 import { Col, Container, Row } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom';
 
-const ProductAll = () => {
+const ProductAll = ({ authenticate, setAuthenticate }) => {
     const [productList, setProductList] = useState([]);
     const [query, setQuery] = useSearchParams();
     async function getProducts() {
@@ -22,7 +22,7 @@ const ProductAll = () => {
 
     return (
         <div>
-            <Navbar />
+            <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
             <Container>
                 <Row>
                     {productList.map((item, index) => (
