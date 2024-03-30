@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar';
 import '../css/brandPage.css';
 import ProductCard from '../components/ProductCard';
 import { Col, Container, Row } from 'react-bootstrap';
@@ -22,7 +21,6 @@ const ProductAll = ({ authenticate, setAuthenticate }) => {
 
     return (
         <div>
-            <Navbar authenticate={authenticate} setAuthenticate={setAuthenticate} />
             <Container>
                 <Row>
                     {productList.map((item, index) => (

@@ -44,10 +44,7 @@ const HomePage = () => {
 
                     <button className="home-card" onClick={() => gotoPage('brand')}>
                         <h4>H & M</h4>
-                        <img
-                            src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg"
-                            alt="Weather"
-                        ></img>
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="brand"></img>
                         {/* <span className="card-back"></span> */}
                     </button>
                 </div>
