@@ -40,6 +40,10 @@ const Redux = () => {
         // setCount(count + 1);
     };
 
+    const decrease = () => {
+        dispatch({ type: 'DECREMENT', payload: { num: 1 } });
+    };
+
     const login = () => {
         dispatch({ type: 'LOGIN', payload: { id: 'molkang', password: '123' } });
     };
@@ -51,6 +55,7 @@ const Redux = () => {
             </h1>
             <h1>{count}</h1>
             <button onClick={increase}>증가</button>
+            <button onClick={decrease}>감소</button>
             <button onClick={login}>로그인</button>
             <Box></Box>
         </div>
