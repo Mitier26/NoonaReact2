@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Workbench&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Righteous&family=Workbench&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', sans-serif;
+}
+
+.game-board {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: transparent;
+    width: 80vw;
+    height: 80vh;
+    background-image: linear-gradient(45deg, rgb(250, 208, 68) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, rgb(250, 208, 68) 25%),
+        linear-gradient(-45deg, rgb(237, 176, 89) 25%, transparent 25%),
+        linear-gradient(-45deg, transparent 75%, rgb(237, 176, 89) 75%);
+    background-size: 40px 40px;
+    background-position: 0 0, -20px 20px, 0 -20px, 20px 0;
+    animation: slide 6s linear infinite;
+    border: 10px solid rgb(246, 140, 2);
+    border-radius: 10px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0 0, -20px 20px, 0 -20px, 20px 0;
+    }
+    100% {
+        background-position: 120px 120px, 100px 140px, 120px 100px, 140px 120px;
+    }
+}
+
+.left > :last-child {
+    width: 50px;
+    height: 150px;
+}
+
+.duck:hover {
+    cursor: pointer;
+}
+
+.duck-coin {
+    /* font-family: 'Righteous', sans-serif; */
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: #93570e;
+    user-select: none;
+}
+
+.duck-coin h2 {
+    font-size: 4em;
+    padding: 0;
+    margin: 0;
+}
+
+.duck-coin p {
+    font-size: 2em;
+    padding: 0;
+    margin: 0;
+}
+
+.right {
+    background-color: transparent;
+}
+
+.item-holder {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.upgrade-item {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    padding: 5px;
+    /* background-color: #ffffff;
+    border: 5px solid rgb(130, 210, 247);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgb(250, 208, 68); */
+    background: repeating-conic-gradient(
+        from var(--a),
+        #ff5506 0%,
+        #ff5506 5%,
+        transparent 5%,
+        transparent 40%,
+        #ff5506 50%
+    );
+    animation: animate 4s linear infinite;
+    border-radius: 20px;
+}
+
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes animate {
+    0% {
+        --a: 0deg;
+    }
+    100% {
+        --a: 360deg;
+    }
+}
+
+.upgrade-item::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: repeating-conic-gradient(
+        from var(--a),
+        #45f3ff 0%,
+        #45f3ff 5%,
+        transparent 5%,
+        transparent 40%,
+        #45f3ff 50%
+    );
+    animation: animate 4s linear infinite;
+    animation-delay: 1.4s;
+    border-radius: 20px;
+}
+
+.upgrade-item::after {
+    content: '';
+    position: absolute;
+    inset: 2px;
+    background-color: #ededed;
+    border-radius: 20px;
+    z-index: 0;
+}
+
+.upgrade-title {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.upgrade-info {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 50%;
+    z-index: 1;
+}
+
+.upgrade-info img {
+    scale: 0.9;
+}
+
+.upgrade-info p {
+    font-size: 14px;
+    margin: 0;
+    font-weight: 600;
+}
+.sprite-animation {
+    width: 32px; /* 애니메이션 프레임의 가로 크기 */
+    height: 32px; /* 애니메이션 프레임의 세로 크기 */
+    background-image: url('../images/ducky_2_spritesheet.png'); /* 스프라이트 이미지 경로 */
+    animation: play 1s steps(4) infinite; /* 애니메이션 속성 설정 */
+    scale: 10;
+}
+@keyframes play {
+    from {
+        background-position: 0px 64px;
+    } /* 시작 프레임의 위치 */
+    to {
+        background-position: -128px 64px;
+    } /* 마지막 프레임의 위치 */
+}
+
+.sprite-animation:hover {
+    width: 32px; /* 애니메이션 프레임의 가로 크기 */
+    height: 32px; /* 애니메이션 프레임의 세로 크기 */
+    background-image: url('../images/ducky_2_spritesheet.png'); /* 스프라이트 이미지 경로 */
+    animation: play2 1s steps(7) infinite; /* 애니메이션 속성 설정 */
+    scale: 10;
+}
+@keyframes play2 {
+    from {
+        background-position: 0px -32px;
+    } /* 시작 프레임의 위치 */
+    to {
+        background-position: -224px -32px;
+    } /* 마지막 프레임의 위치 */
+}

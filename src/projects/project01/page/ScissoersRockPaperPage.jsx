@@ -79,9 +79,15 @@ const ScissoersRockPaperPage = () => {
                 </div>
 
                 <div className="buttons">
-                    <button onClick={() => play('rock')}>👊</button>
-                    <button onClick={() => play('scissors')}>✌</button>
-                    <button onClick={() => play('paper')}>🖐</button>
+                    <button className="srp-btn" onClick={() => play('rock')}>
+                        👊
+                    </button>
+                    <button className="srp-btn" onClick={() => play('scissors')}>
+                        ✌
+                    </button>
+                    <button className="srp-btn" onClick={() => play('paper')}>
+                        🖐
+                    </button>
                 </div>
             </div>
             <div className="back"></div>

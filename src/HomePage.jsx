@@ -2,8 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import BGMPlayer from './BGMPlayer';
 import BattleBGM from './assets/sounds/PerituneMaterial_Dramatic4.mp3';
+import DuckBGM from './assets/sounds/Fall Theme.mp3';
 import ScissoersRockPaperPage from './projects/project01/page/ScissoersRockPaperPage';
 import weatherImg from './assets/images/weather.jpg';
+import duckImg from './assets/images/ducks.jpg';
 
 const HomePage = () => {
     // const bgm = useRef(null);
@@ -21,6 +23,7 @@ const HomePage = () => {
         // bgm.current.play();
 
         if (page === 'scissorsrockpaper') BGMPlayer.playBGM(BattleBGM);
+        else if (page === 'reducks') BGMPlayer.playBGM(DuckBGM);
         navigate(`/${page}`);
     };
 
@@ -45,6 +48,21 @@ const HomePage = () => {
                     <button className="home-card" onClick={() => gotoPage('brand')}>
                         <h4>H & M</h4>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="brand"></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
+
+                    <button className="home-card" onClick={() => gotoPage('redux')}>
+                        <h4>Redux</h4>
+                        <img
+                            src="https://velog.velcdn.com/images/otterp/post/83240bc6-08a4-4d38-b4ea-80c38bd68589/image.jpeg"
+                            alt="redux"
+                        ></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
+
+                    <button className="home-card" onClick={() => gotoPage('reducks')}>
+                        <h4>Re:ducks</h4>
+                        <img src={duckImg} alt="brand"></img>
                         {/* <span className="card-back"></span> */}
                     </button>
                 </div>

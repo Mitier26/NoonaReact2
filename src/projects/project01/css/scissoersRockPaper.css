@@ -41,14 +41,14 @@
     margin-top: 20px;
 }
 
-button {
+.buttons button {
     padding: 10px;
     font-size: 2em;
     border-radius: 10px;
     transition: 0.5s;
 }
 
-button:hover {
+.buttons button:hover {
     scale: 1.2;
     background-color: chartreuse;
     cursor: pointer;
