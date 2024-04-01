@@ -34,24 +34,28 @@ const HomePage = () => {
                 <h1 className="title">누나와 리액트</h1>
                 <div className="card-holder">
                     <button className="home-card" onClick={() => gotoPage('scissorsrockpaper')}>
+                        <div className="project-num">1강</div>
                         <h4>가위 바위 보</h4>
                         <img src="https://openclipart.org/download/325653/rockscissorspaper.svg"></img>
                         {/* <span className="card-back"></span> */}
                     </button>
 
                     <button className="home-card" onClick={() => gotoPage('weather')}>
+                        <div className="project-num">2강</div>
                         <h4>날 씨</h4>
                         <img src={weatherImg} alt="Weather"></img>
                         {/* <span className="card-back"></span> */}
                     </button>
 
                     <button className="home-card" onClick={() => gotoPage('brand')}>
+                        <div className="project-num">3강</div>
                         <h4>H & M</h4>
                         <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/H%26M-Logo.svg" alt="brand"></img>
                         {/* <span className="card-back"></span> */}
                     </button>
 
                     <button className="home-card" onClick={() => gotoPage('redux')}>
+                        <div className="project-num">4강</div>
                         <h4>Redux</h4>
                         <img
                             src="https://velog.velcdn.com/images/otterp/post/83240bc6-08a4-4d38-b4ea-80c38bd68589/image.jpeg"
@@ -61,8 +65,20 @@ const HomePage = () => {
                     </button>
 
                     <button className="home-card" onClick={() => gotoPage('reducks')}>
+                        <div className="project-num">4-1강</div>
                         <h4>Re:ducks</h4>
                         <img src={duckImg} alt="brand"></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
+
+                    <button className="home-card" onClick={() => gotoPage('phone')}>
+                        <div className="project-num">5강</div>
+                        <div className="new-project">NEW</div>
+                        <h4>Phone Book</h4>
+                        <img
+                            src="https://www.pngkey.com/png/full/37-370762_file-peo-phone-book-svg-wikimedia-commons-clipart.png"
+                            alt="phone"
+                        ></img>
                         {/* <span className="card-back"></span> */}
                     </button>
                 </div>
