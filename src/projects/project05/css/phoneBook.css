@@ -8,3 +8,33 @@
 .phone-container {
     justify-content: flex-start;
 }
+
+.phone-sub-title {
+    font-size: 32px;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+.phone-item {
+    margin-top: 10px;
+    background-color: rgb(232, 232, 232);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.phone-item-buttons {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.phone-item-buttons Button {
+    width: 40%;
+}
+
+.phone-info {
+    width: 250px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

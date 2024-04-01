@@ -19,7 +19,7 @@ const PhoneBook = () => {
                 <h1 className="phone-title">연락처</h1>
                 <Container className="phone-container">
                     <Row>
-                        <Col>
+                        <Col className="phone-left">
                             <ContactForm />
                         </Col>
                         <Col>

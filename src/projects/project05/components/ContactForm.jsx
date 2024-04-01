@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
+import { v4 as uuidv4 } from 'uuid';
 
 const ContactForm = () => {
     const [name, setName] = useState('');
@@ -10,11 +11,14 @@ const ContactForm = () => {
 
     const addContact = (event) => {
         event.preventDefault();
-        dispatch({ type: 'ADD_CONTACT', payload: { name, phoneNumber } });
+        const id = uuidv4();
+        console.log(id);
+        dispatch({ type: 'ADD_CONTACT', payload: { name, phoneNumber, id } });
     };
 
     return (
-        <div>
+        <div className="contact-form">
+            <h1 className="phone-sub-title">전화번호 추가하기</h1>
             <Form onSubmit={addContact}>
                 <Form.Group className="mb-3" controlId="formName">
                     <Form.Label>이름</Form.Label>

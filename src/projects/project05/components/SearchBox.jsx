@@ -16,18 +16,21 @@ const SearchBox = () => {
     };
 
     return (
-        <Row>
-            <Col xs={10}>
-                <Form.Control
-                    type="text"
-                    placeholder="이름을 입력해주세요"
-                    onChange={(event) => setKeyword(event.target.value)}
-                />
-            </Col>
-            <Col xs={2}>
-                <Button onClick={search}>찾기</Button>
-            </Col>
-        </Row>
+        <>
+            <h1 className="phone-sub-title">이름으로 검색</h1>
+            <Row>
+                <Col xs={8}>
+                    <Form.Control
+                        type="text"
+                        placeholder="이름을 입력해주세요"
+                        onChange={(event) => setKeyword(event.target.value)}
+                    />
+                </Col>
+                <Col xs={4}>
+                    <Button onClick={search}>찾기</Button>
+                </Col>
+            </Row>
+        </>
     );
 };
 
