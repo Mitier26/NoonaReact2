@@ -19,10 +19,10 @@ const PhoneBook = () => {
                 <h1 className="phone-title">연락처</h1>
                 <Container className="phone-container">
                     <Row>
-                        <Col className="phone-left">
+                        <Col xs={6} className="phone-left">
                             <ContactForm />
                         </Col>
-                        <Col>
+                        <Col xs={6}>
                             <ContactList />
                         </Col>
                     </Row>
