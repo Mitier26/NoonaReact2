@@ -74,10 +74,21 @@ const HomePage = () => {
                     <button className="home-card" onClick={() => gotoPage('phone')}>
                         <div className="project-num">5강</div>
                         <div className="new-project">NEW</div>
-                        <h4>Phone Book</h4>
+                        <h4>전화부</h4>
                         <img
                             src="https://www.pngkey.com/png/full/37-370762_file-peo-phone-book-svg-wikimedia-commons-clipart.png"
                             alt="phone"
+                        ></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
+
+                    <button className="home-card" onClick={() => gotoPage('thunk')}>
+                        <div className="project-num">6강</div>
+                        <div className="new-project">NEW</div>
+                        <h4>Thunk</h4>
+                        <img
+                            src="https://miro.medium.com/v2/resize:fit:1400/1*5FcvZufrMDzs1ef63NjhXw.jpegg"
+                            alt="thunk"
                         ></img>
                         {/* <span className="card-back"></span> */}
                     </button>

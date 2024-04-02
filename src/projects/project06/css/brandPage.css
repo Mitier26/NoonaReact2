@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+}
+
+.login-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-list {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.menu-list li {
+    padding: 10px;
+}
+
+.input-area {
+    position: absolute;
+    right: 20px;
+    float: right;
+    border-bottom: 3px solid black;
+}
+
+.input-area input {
+    border: none;
+    outline: none;
+}
+
+.card {
+    transition: 0.1s;
+    margin: 10px;
+}
+.card:hover {
+    scale: 1.1;
+    z-index: 1;
+}
+
+.product-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-btn {
+    cursor: pointer;
+}
+
+@media (width < 1050px) {
+    .menu-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .input-area {
+        position: relative;
+        display: block;
+    }
+}
+
+.menu-drop {
+    display: none;
+}
+
+@media (width < 576px) {
+    .main-row {
+        width: 90%;
+    }
+    .card {
+        width: 80%;
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 10px auto;
+    }
+    .card img {
+        width: 40%;
+        height: 100%;
+    }
+    .card-info {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .menu-list {
+        display: none;
+    }
+    .menu-drop {
+        display: block;
+        position: absolute;
+        left: 50px;
+    }
+}
