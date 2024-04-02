@@ -73,7 +73,6 @@ const HomePage = () => {
 
                     <button className="home-card" onClick={() => gotoPage('phone')}>
                         <div className="project-num">5강</div>
-                        <div className="new-project">NEW</div>
                         <h4>전화부</h4>
                         <img
                             src="https://www.pngkey.com/png/full/37-370762_file-peo-phone-book-svg-wikimedia-commons-clipart.png"
