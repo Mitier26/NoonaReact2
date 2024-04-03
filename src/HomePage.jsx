@@ -83,11 +83,21 @@ const HomePage = () => {
 
                     <button className="home-card" onClick={() => gotoPage('thunk')}>
                         <div className="project-num">6강</div>
-                        <div className="new-project">NEW</div>
                         <h4>Thunk</h4>
                         <img
                             src="https://miro.medium.com/v2/resize:fit:1400/1*5FcvZufrMDzs1ef63NjhXw.jpeg"
                             alt="thunk"
+                        ></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
+
+                    <button className="home-card" onClick={() => gotoPage('newTec')}>
+                        <div className="project-num">7강</div>
+                        <div className="new-project">NEW</div>
+                        <h4>신기술</h4>
+                        <img
+                            src="https://miro.medium.com/v2/resize:fit:1400/1*5FcvZufrMDzs1ef63NjhXw.jpeg"
+                            alt="new Tec"
                         ></img>
                         {/* <span className="card-back"></span> */}
                     </button>
