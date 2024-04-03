@@ -86,7 +86,7 @@ const HomePage = () => {
                         <div className="new-project">NEW</div>
                         <h4>Thunk</h4>
                         <img
-                            src="https://miro.medium.com/v2/resize:fit:1400/1*5FcvZufrMDzs1ef63NjhXw.jpegg"
+                            src="https://miro.medium.com/v2/resize:fit:1400/1*5FcvZufrMDzs1ef63NjhXw.jpeg"
                             alt="thunk"
                         ></img>
                         {/* <span className="card-back"></span> */}
