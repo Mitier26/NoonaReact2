@@ -1,4 +1,4 @@
-# 2025. 04. 03
+# 2024. 04. 03
 - [x] redux toolkit에 대해 알아보기
 - [x] ProductDetail를 변경하기
       
