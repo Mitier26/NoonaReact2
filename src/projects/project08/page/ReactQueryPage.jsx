@@ -10,7 +10,7 @@ const ReactQueryPage = () => {
     const ids = [1, 2, 3, 4];
 
     const fetchPostDetail = (id) => {
-        return axios.get(`http://localhost:3004/posts/${id}`);
+        return axios.get(`https://my-json-server.typicode.com/Mitier26/NoonaReact2/posts/${id}`);
     };
 
     const results = useQueries({
@@ -31,7 +31,7 @@ const ReactQueryPage = () => {
     // 여기에 queryKey 에서 같이 보낸 것이 들어 있다.
     const fetchPost = (queryData) => {
         const id = queryData.queryKey[1];
-        return axios.get('http://localhost:3004/posts');
+        return axios.get('https://my-json-server.typicode.com/Mitier26/NoonaReact2/posts');
     };
     // reactQuery의 대표 훅 useQuery
     // 여기에 들어오면 바로 시작된다. 바로 시작 되지 않게 하는 방법도 있다.
