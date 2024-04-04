@@ -19,6 +19,8 @@ import axios from 'axios';
 
 const fetchPost = () => {
     // const id = queryData.queryKey[1];
+    // return axios.get('http://localhost:3004/posts');
+
     return axios.get('https://my-json-server.typicode.com/Mitier26/NoonaReact2/posts');
 };
 

@@ -9,29 +9,30 @@ const ReactQueryPage = () => {
     // 아이디가 여러개 일 경우
     const ids = [1, 2, 3, 4];
 
-    const fetchPostDetail = (id) => {
-        return axios.get(`https://my-json-server.typicode.com/Mitier26/NoonaReact2/posts/${id}`);
-    };
+    // const fetchPostDetail = (id) => {
+    //     return axios.get(`https://my-json-server.typicode.com/Mitier26/NoonaReact2/posts/${id}`);
+    // };
 
-    const results = useQueries({
-        queries: ids.map((id) => {
-            return {
-                queryKey: ['posts', id],
-                queryFn: () => fetchPostDetail(id),
-            };
-        }),
-        combine: (results) => {
-            return {
-                data: results.map((result) => result.data.data),
-            };
-        },
-    });
+    // const results = useQueries({
+    //     queries: ids.map((id) => {
+    //         return {
+    //             queryKey: ['posts', id],
+    //             queryFn: () => fetchPostDetail(id),
+    //         };
+    //     }),
+    //     combine: (results) => {
+    //         return {
+    //             data: results.map((result) => result.data.data),
+    //         };
+    //     },
+    // });
 
     // queryData는 queryFn 에서 보내주는 값이다.
     // 여기에 queryKey 에서 같이 보낸 것이 들어 있다.
     const fetchPost = (queryData) => {
         const id = queryData.queryKey[1];
-        return axios.get('https://my-json-server.typicode.com/Mitier26/NoonaReact2/posts');
+        // return axios.get('http://localhost:3004/posts');
+        return axios.get(`https://my-json-server.typicode.com/Mitier26/NoonaReact2/posts`);
     };
     // reactQuery의 대표 훅 useQuery
     // 여기에 들어오면 바로 시작된다. 바로 시작 되지 않게 하는 방법도 있다.
