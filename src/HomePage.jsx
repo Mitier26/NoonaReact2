@@ -101,6 +101,17 @@ const HomePage = () => {
                         ></img>
                         {/* <span className="card-back"></span> */}
                     </button>
+
+                    <button className="home-card" onClick={() => gotoPage('query')}>
+                        <div className="project-num">8강</div>
+                        <div className="new-project">NEW</div>
+                        <h4>React Query</h4>
+                        <img
+                            src="https://miro.medium.com/v2/resize:fit:1400/1*5FcvZufrMDzs1ef63NjhXw.jpeg"
+                            alt="new Tec"
+                        ></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
                 </div>
             </div>
         </div>

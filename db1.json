@@ -1,0 +1,8 @@
+{
+    "posts": [
+        { "id": 1, "title": "html 강의" },
+        { "id": 2, "title": "JavaScript 강의" },
+        { "id": 3, "title": "React 강의" },
+        { "id": 4, "title": "NodeJs 강의" }
+    ]
+}

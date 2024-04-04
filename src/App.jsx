@@ -11,6 +11,7 @@ import ReducksPage from './projects/project04-2/page/Reducks';
 import PhoneBookPage from './projects/project05/page/PhoneBook';
 import ReduxThunkPage from './projects/project06/page/BrandPage';
 import NewTecPage from './projects/project07/page/BrandPage';
+import ReactQueryPage from './projects/project08/page/ReactQueryRoute';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
                 <Route path="/phone" element={<PhoneBookPage />} />
                 <Route path="/thunk/*" element={<ReduxThunkPage />} />
                 <Route path="/newTec/*" element={<NewTecPage />} />
+                <Route path="/query/*" element={<ReactQueryPage />} />
             </Routes>
         </div>
     );

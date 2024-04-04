@@ -36,9 +36,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 170px;
+    width: 200px;
     /* height: 20vw; */
-    height: 200px;
+    height: 250px;
     padding: 5px;
     /* background-color: rgb(196, 236, 202); */
     border: 3px solid rgb(174, 10, 174);
@@ -75,7 +75,7 @@
     border-radius: 10px;
     color: rgb(249, 72, 72);
     line-height: 30px;
-    top: 40px;
+    top: 50px;
     right: 10px;
     font-weight: bold;
     letter-spacing: 2px;
