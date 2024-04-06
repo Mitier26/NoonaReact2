@@ -1,5 +1,5 @@
+// import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route, Navigate } from 'react-router-dom';
 import ScissoersRockPaperPage from './projects/project01/page/ScissoersRockPaperPage';
 import HomePage from './HomePage';
@@ -12,6 +12,7 @@ import PhoneBookPage from './projects/project05/page/PhoneBook';
 import ReduxThunkPage from './projects/project06/page/BrandPage';
 import NewTecPage from './projects/project07/page/BrandPage';
 import ReactQueryPage from './projects/project08/page/ReactQueryRoute';
+import NetflixRouter from './projects/project09/page/NetflixRouter';
 
 function App() {
     return (
@@ -28,6 +29,7 @@ function App() {
                 <Route path="/thunk/*" element={<ReduxThunkPage />} />
                 <Route path="/newTec/*" element={<NewTecPage />} />
                 <Route path="/query/*" element={<ReactQueryPage />} />
+                <Route path="/netflix/*" element={<NetflixRouter />} />
             </Routes>
         </div>
     );

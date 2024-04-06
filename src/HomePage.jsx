@@ -93,7 +93,6 @@ const HomePage = () => {
 
                     <button className="home-card" onClick={() => gotoPage('newTec')}>
                         <div className="project-num">7강</div>
-                        <div className="new-project">NEW</div>
                         <h4>신기술</h4>
                         <img
                             src="https://miro.medium.com/v2/resize:fit:1400/1*JEN-TCHauufYjfLVlFlLvg.jpeg"
@@ -104,8 +103,18 @@ const HomePage = () => {
 
                     <button className="home-card" onClick={() => gotoPage('query')}>
                         <div className="project-num">8강</div>
-                        <div className="new-project">NEW</div>
                         <h4>React Query</h4>
+                        <img
+                            src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbJTytI%2FbtsgBGx4tqo%2FyfNXVGlDY6QWnzcrOZyAmK%2Fimg.png"
+                            alt="new Tec"
+                        ></img>
+                        {/* <span className="card-back"></span> */}
+                    </button>
+
+                    <button className="home-card" onClick={() => gotoPage('netflix')}>
+                        <div className="project-num">9강</div>
+                        <div className="new-project">NEW</div>
+                        <h4>Netflix</h4>
                         <img
                             src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbJTytI%2FbtsgBGx4tqo%2FyfNXVGlDY6QWnzcrOZyAmK%2Fimg.png"
                             alt="new Tec"
