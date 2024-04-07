@@ -103,7 +103,7 @@ const HomePage = () => {
 
                     <button className="home-card" onClick={() => gotoPage('query')}>
                         <div className="project-num">8강</div>
-                        <h4>React Query</h4>
+                        <h4>Query</h4>
                         <img
                             src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbJTytI%2FbtsgBGx4tqo%2FyfNXVGlDY6QWnzcrOZyAmK%2Fimg.png"
                             alt="new Tec"
@@ -116,8 +116,8 @@ const HomePage = () => {
                         <div className="new-project">NEW</div>
                         <h4>Netflix</h4>
                         <img
-                            src="https://img1.daumcdn.net/thumb/R800x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FbJTytI%2FbtsgBGx4tqo%2FyfNXVGlDY6QWnzcrOZyAmK%2Fimg.png"
-                            alt="new Tec"
+                            src="https://yt3.googleusercontent.com/ytc/AIdro_m_yDK6DVU4BhuMEIhLF7CvihoscyEO1f2o4u2YGbVhWuQ=s900-c-k-c0x00ffffff-no-rj"
+                            alt="Mflix"
                         ></img>
                         {/* <span className="card-back"></span> */}
                     </button>
