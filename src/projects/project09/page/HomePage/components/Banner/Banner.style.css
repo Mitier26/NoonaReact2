@@ -3,6 +3,7 @@
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 
 .netflix_banner::before {
@@ -15,7 +16,7 @@
 }
 
 .banner-text-area {
-    width: 36%;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +24,29 @@
     padding: 2rem;
 }
 
+.banner-text-area h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.banner-text-area p {
+    font-size: 0.9em;
+}
+
 .banner-text-area > * {
     z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .banner-text-area {
+        width: 80%;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+    .banner-text-area h1 {
+        font-size: 1.8em;
+    }
+    .banner-text-area p {
+        font-size: 1em;
+    }
 }

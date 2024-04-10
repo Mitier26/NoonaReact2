@@ -7,7 +7,7 @@ const MovieCard = ({ movie }) => {
     const { data: genreData } = useMovieGenreQuery();
 
     const showGenre = (genreIdList) => {
-        if (!genreData) return [];
+        if (!genreIdList) return [];
         const genreNameList = genreIdList.map((id) => {
             const genreObj = genreData.find((genre) => genre.id === id);
             return genreObj.name;
@@ -20,7 +20,7 @@ const MovieCard = ({ movie }) => {
         <div
             style={{
                 backgroundImage:
-                    'url(' + `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${movie.poster_path}` + ')',
+                    'url(' + `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${movie?.poster_path}` + ')',
             }}
             className="movie-card"
         >
