@@ -14,6 +14,7 @@ const MovieSlider = ({ title, movies, responsive }) => {
                 itemClass="movie-slicer p-1"
                 containerClass="carousel-container"
                 responsive={responsive}
+                focusOnSelect={true}
             >
                 {movies.map((movie, index) => (
                     <MovieCard movie={movie} key={index} />
