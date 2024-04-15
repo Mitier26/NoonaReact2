@@ -110,7 +110,7 @@ const HomePage = () => {
                         ></img>
                         {/* <span className="card-back"></span> */}
                     </button>
-                    {/* 
+
                     <button className="home-card" onClick={() => gotoPage('netflix')}>
                         <div className="project-num">9강</div>
                         <div className="new-project">NEW</div>
@@ -119,8 +119,7 @@ const HomePage = () => {
                             src="https://yt3.googleusercontent.com/ytc/AIdro_m_yDK6DVU4BhuMEIhLF7CvihoscyEO1f2o4u2YGbVhWuQ=s900-c-k-c0x00ffffff-no-rj"
                             alt="Mflix"
                         ></img>
-                        
-                    </button> */}
+                    </button>
                 </div>
             </div>
         </div>
